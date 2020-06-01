@@ -111,15 +111,13 @@ h3 {
 
 .section__nav-bar .nav-bar__links .nav {
   cursor: pointer;
-  border-right: 4px solid #cccccc;
-  border-bottom: 2px solid white;
+  border-right: 6px solid #cccccc;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .section__nav-bar .nav-bar__links .nav:hover {
   border-right: 6px solid #ff59a9;
-  border-bottom: 2px solid #ff59a9;
   color: #ff59a9;
 }
 
@@ -237,7 +235,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100% -40rem;
+  width: 100%;
   position: relative;
 }
 
@@ -270,7 +268,7 @@ h3 {
   padding: 10px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  width: calc(100% -40px);
+  width: calc(100% -10rem);
   margin: 20px;
   border-radius: 6px;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -378,7 +376,7 @@ h3 {
 }
 
 .searchPanelTranslateRight {
-  right: -40rem !important;
+  right: -60rem !important;
   height: 100vh !important;
   overflow: hidden !important;
 }
@@ -388,6 +386,7 @@ h3 {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   min-width: 40rem;
+  max-width: 40rem;
   height: 100vh;
   background-color: #cccccc;
   display: -webkit-box;
@@ -664,6 +663,7 @@ h3 {
   border-radius: 5px;
   padding: 30px 20px;
   color: #2e2e2e;
+  overflow-y: scroll;
 }
 
 .section__learn-more .container .text-container .learn-more-title {

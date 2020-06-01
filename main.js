@@ -132,7 +132,7 @@ function populatePage() {
 	const totalDeaths = parseInt(totalDeathsString.replace(/,/g, ''))
 	const totalRecovered = parseInt(totalRecoveredString.replace(/,/g, ''))
 
-	const deathPercentage = Math.round(totalDeaths / totalCases * 1000) / 1000 * 100;
+	const deathPercentage = Math.round(totalDeaths / totalCases * 10000) / 100;
 
 	//sets innerText of elements
 	infectedCounter.innerText = totalCasesString;

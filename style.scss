@@ -97,12 +97,10 @@ h3 {
             }
             .nav {
                 cursor: pointer;
-                border-right: 4px solid #cccccc;
-                border-bottom: 2px solid white;
+                border-right: 6px solid #cccccc;
                 transition: all 0.2s;
                 &:hover {
                     border-right: 6px solid $dark-pink;
-                    border-bottom: 2px solid $dark-pink;
                     color: $dark-pink;
                 }
             }
@@ -188,7 +186,7 @@ h3 {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 100% -40rem;
+        width: 100%;
         position: relative;
         .drop-down__graph {
             display: inline-block;
@@ -210,7 +208,7 @@ h3 {
             background-color: white;
             padding: 10px;
             transition: all 0.2s;
-            width: calc(100% -40px);
+            width: calc(100% -10rem);
             margin: 20px;
             border-radius: 6px;
             box-shadow: 0 1rem 2rem rgba($color: black, $alpha: .1);
@@ -265,7 +263,7 @@ h3 {
 }
 
 .searchPanelTranslateRight {
-    right: -40rem !important;
+    right: -60rem !important;
     height: 100vh !important;
     overflow: hidden !important;
 }
@@ -274,6 +272,7 @@ h3 {
 .section__search {
     transition: all 0.5s;
     min-width: 40rem;
+    max-width: 40rem;
     height: 100vh;
     background-color: #cccccc;
     display: flex;
@@ -494,6 +493,7 @@ h3 {
             border-radius: 5px;
             padding: 30px 20px;
             color: rgb(46, 46, 46);
+            overflow-y: scroll;
             .learn-more-title {
                 border-bottom: 1px solid rgb(218, 218, 218);
                 padding-bottom: 10px;
