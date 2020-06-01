@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--NAV BAR-->
+    <section class="section__nav-bar">
+        <div class="nav-bar__logo">
+            <img class="nav-bar__logo-logo" src="./images/virus.png" alt="Coronavirus">
+        </div>
+
+        <ul class="nav-bar__links">
+            <li class="nav navGraphs">Graphs</li>
+            <li class="nav navNews">News</li>
+            <li class="nav navLearnMore">Learn More</li>
+        </ul>
+
+        <div class="nav-bar__creator">
+            <p>Made by</p>
+            <p>Jeffrey Cao</p>
+        </div>
+    </section>
+
+    <!--FRONT PAGE-->
+    <section class="section__front-page">
+        <div class="container">
+            <div class="text-container">
+                <h1 class="main-page-title">Click something over there to begin</h1>
+                <h2 class="main-page-subtitle"><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<</h2>
+            </div>
+        </div>
+    </section>
+
+    <!--GRAPH INFORMATION-->
+    <section class="section__information informationPanelTranslateUp">
+        <div class="container">
+            <div class="selections-container">
+                <div class="selections">
+                    <div>
+                        <input type="checkbox" id="casesPerMillionCheckbox" checked>
+                        <label for="casesPerMillionCheckbox">Cases Per Million of Population</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="deathsPerMillionCheckbox">
+                        <label for="deathsPerMillionCheckbox">Deaths Per Million of Population</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="totalTestsCheckbox">
+                        <label for="totalTestsCheckbox">Total Tests</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="seriousCriticalCheckbox">
+                        <label for="seriousCriticalCheckbox">People in Serious Critical Condition</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="deathsCheckbox">
+                        <label for="deathsCheckbox">Total Deaths</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="totalRecoveredCheckbox">
+                        <label for="totalRecoveredCheckbox">Total Recovered</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="testsPerMillionCheckbox">
+                        <label for="testsPerMillionCheckbox">Tests Per Million of Population</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="activeCasesCheckbox">
+                        <label for="activeCasesCheckbox">Active Cases</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="casesCheckbox">
+                        <label for="casesCheckbox">Total Cases</label>
+                    </div>
+                </div>
+            </div>
+            <h1 class="countries-selected"></h1>
+            <div class="chart-container-container">
+                <div class="chart-container casesPerMillionView display-inline-block">
+                    <canvas id="casesPerMillion"></canvas>
+                </div>
+                <div class="chart-container deathsPerMillionView">
+                    <canvas id="deathsPerMillion"></canvas>
+                </div>
+                <div class="chart-container totalTestsView">
+                    <canvas id="totalTests"></canvas>
+                </div>
+                <div class="chart-container seriousCriticalView">
+                    <canvas id="seriousCritical"></canvas>
+                </div>
+                <div class="chart-container deathsView">
+                    <canvas id="deaths"></canvas>
+                </div>
+                <div class="chart-container totalRecoveredView">
+                    <canvas id="totalRecovered"></canvas>
+                </div>
+                <div class="chart-container testsPerMillionView">
+                    <canvas id="testsPerMillion"></canvas>
+                </div>
+                <div class="chart-container activeCasesView">
+                    <canvas id="activeCases"></canvas>
+                </div>
+                <div class="chart-container casesView">
+                    <canvas id="cases"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--GRAPH SEARCH BAR-->
+    <section class="section__search searchPanelTranslateRight">
+        <div class="container">
+            <div class="search__total-infected">
+                <h1 class="infected-counter">9999999</h1>
+                <h2>TOTAL CASES</h2>
+            </div>
+
+            <div class="search__stats">
+                <div class="search search__dead">
+                    <h1 class="stat deaths-counter">999999</h1>
+                    <h2>DEATHS</h2>
+                </div>
+                <div class="search search__recovered">
+                    <h1 class="stat recovered-counter">9999999</h1>
+                    <h2>RECOVERED</h2>
+                </div>
+                <div class="search search__death-rate">
+                    <h1 class="stat death-rate">7.7%</h1>
+                    <h2>DEATH RATE</h2>
+                </div>
+            </div>
+
+            <div class="search__filter">
+                <input class="search__filter-input" type="text" placeholder="Search by Country">
+            </div>
+
+            <div class="table-container">
+                <table class="table table-striped">
+                    <tr class="headings">
+                        <th>Country</th>
+                        <th>Infected</th>
+                    </tr>
+
+                    <tbody class="table-data">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!--NEWS-->
+    <section class="section__news sectionNewsTranslateLeft">
+        <div class="content-container">
+            <div class="container">
+                <h1 class="newspage-header">Global Coronavirus News</h1>
+                <div class="news-articles-container">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--LEARN MORE-->
+    <section class="section__learn-more sectionLearnMoreTranslateDown">
+        <div class="container">
+            <div class="text-container">
+                <h1 class="learn-more-title">Protecting yourself and others from the spread COVID-19</h1>
+                <p class="learn-more-heading">You can reduce your chances of being infected or spreading COVID-19 by taking some simple precautions:</p>
+                <ul>
+                    <li>Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water. Why? Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands.</li>
+                    <li>Maintain at least 1 metre (3 feet) distance between yourself and others. Why? When someone coughs, sneezes, or speaks they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person has the disease.</li>
+                    <li>Avoid going to crowded places. Why? Where people come together in crowds, you are more likely to come into close contact with someone that has COIVD-19 and it is more difficult to maintain physical distance of 1 metre (3 feet).</li>
+                    <li>Avoid touching eyes, nose and mouth. Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and infect you.</li>
+                    <li>Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately and wash your hands. Why? Droplets spread virus. By following good respiratory hygiene, you protect the people around you from viruses such as cold, flu and COVID-19.</li>
+                    <li>Stay home and self-isolate even with minor symptoms such as cough, headache, mild fever, until you recover. Have someone bring you supplies. If you need to leave your house, wear a mask to avoid infecting others. Why? Avoiding contact with others will protect them from possible COVID-19 and other viruses.</li>
+                    <li>Keep up to date on the latest information from trusted sources, such as WHO or your local and national health authorities. Why? Local and national authorities are best placed to advise on what people in your area should be doing to protect themselves.</li>
+                </ul>
+                <p class="credit">To learn more about coronavirus visit <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
