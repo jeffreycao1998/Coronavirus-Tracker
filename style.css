@@ -71,8 +71,8 @@ h3 {
   position: fixed;
   left: 0;
   z-index: 100;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .section__nav-bar .nav-bar__logo {
@@ -137,10 +137,9 @@ h3 {
 
 /*----FRONT PAGE----*/
 .section__front-page {
-  width: calc(100% - 13rem);
+  width: calc(100%);
   height: 100%;
   position: absolute;
-  left: 13rem;
 }
 
 .section__front-page .container {
@@ -165,6 +164,7 @@ h3 {
   padding: 15px 15px 0 15px;
   -webkit-box-shadow: 0 4rem 10rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 4rem 10rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 100px;
 }
 
 .section__front-page .container .text-container .main-page-title {
@@ -179,40 +179,14 @@ h3 {
 
 .informationPanelTranslateUp {
   top: -100% !important;
-  -webkit-animation: disappear 0.5s linear;
-          animation: disappear 0.5s linear;
-  height: 100vh !important;
+  height: 10vh !important;
   overflow: hidden !important;
-}
-
-@-webkit-keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-  }
-}
-
-@keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-  }
 }
 
 /*----GRAPHING INFORMATION----*/
 .section__information {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   width: calc(100% - 53rem);
   min-height: 100vh;
   position: absolute;
@@ -266,8 +240,8 @@ h3 {
   display: inline-block;
   background-color: white;
   padding: 10px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: calc(100% -10rem);
   margin: 20px;
   border-radius: 6px;
@@ -383,8 +357,8 @@ h3 {
 
 /*----GRAPH SEARCH BAR----*/
 .section__search {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   min-width: 40rem;
   max-width: 40rem;
   height: 100vh;
@@ -527,8 +501,8 @@ h3 {
   position: absolute;
   left: 13rem;
   width: calc(100% - 13rem);
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -629,8 +603,8 @@ h3 {
   left: 13rem;
   width: calc(100% - 13rem);
   height: 100vh;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   background-color: #cccccc;
   bottom: 0;
   display: -webkit-box;

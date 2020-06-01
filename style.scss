@@ -69,7 +69,7 @@ h3 {
     position: fixed;
     left: 0;
     z-index: 100;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
     .nav-bar {
 
         &__logo {
@@ -124,10 +124,9 @@ h3 {
 /*----FRONT PAGE----*/
 
 .section__front-page {
-    width: calc(100% - 13rem);
+    width: calc(100%);
     height: 100%;
     position: absolute;
-    left: 13rem;
     .container {
         width: 100%;
         height: 100%;
@@ -141,6 +140,7 @@ h3 {
             border-radius: 5px;
             padding: 15px 15px 0 15px;
             box-shadow: 0 4rem 10rem rgba($color: black, $alpha: .2);
+            margin-bottom: 100px;
             .main-page-title {
                 text-align: center;
                 color: white;
@@ -155,26 +155,13 @@ h3 {
 
 .informationPanelTranslateUp {
     top: -100% !important;
-    animation: disappear 0.5s linear;
-    height: 100vh !important;
+    height: 10vh !important;
     overflow: hidden !important;
-}
-
-@keyframes disappear {
-    0% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 0;
-    }
 }
 
 /*----GRAPHING INFORMATION----*/
 .section__information {
-    transition: all 0.5s;
+    transition: all 1s ease-in-out;
     width: calc(100% - 53rem);
     min-height: 100vh;
     position: absolute;
@@ -207,7 +194,7 @@ h3 {
             display: inline-block;
             background-color: white;
             padding: 10px;
-            transition: all 0.2s;
+            transition: all 0.2s ease-in-out;
             width: calc(100% -10rem);
             margin: 20px;
             border-radius: 6px;
@@ -270,7 +257,7 @@ h3 {
 
 /*----GRAPH SEARCH BAR----*/
 .section__search {
-    transition: all 0.5s;
+    transition: all 1s ease-in-out;
     min-width: 40rem;
     max-width: 40rem;
     height: 100vh;
@@ -391,7 +378,7 @@ h3 {
     position: absolute;
     left: 13rem;
     width: calc(100% - 13rem);
-    transition: all 1s;
+    transition: all 1s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -474,7 +461,7 @@ h3 {
     left: 13rem;
     width: calc(100% - 13rem);
     height: 100vh;
-    transition: all 0.5s;
+    transition: all 1s ease-in-out;
     background-color: #cccccc;
     bottom: 0;
     display: flex;
