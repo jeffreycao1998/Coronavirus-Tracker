@@ -3,4 +3,4 @@ A website displaying real time corona virus statistics and global news using two
 
 This is my first project ever!
 
-This view a live demo if this project please visit https://jeffreycao1998.github.io/Coronavirus-Tracker/
+To view a live demo of this project please visit https://jeffreycao1998.github.io/Coronavirus-Tracker/
